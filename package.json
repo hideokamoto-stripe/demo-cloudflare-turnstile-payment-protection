@@ -3,13 +3,15 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
-    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings",
+    "format": "prettier --write {src}"
   },
   "dependencies": {
     "hono": "^4.6.9"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20241022.0",
+    "prettier": "^3.3.3",
     "wrangler": "^3.83.0"
   }
 }
