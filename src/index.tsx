@@ -150,7 +150,6 @@ app.get("/", async (c) => {
               );
               return;
             }
-            return;
 
             const { error: submitError } = await elements.submit();
             if (submitError) {
